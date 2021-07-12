@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Dr. Melissa Bentley-Ford</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -15,28 +15,123 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-    <!-- Font link for hamburger menu -->
+  <!-- Font link for hamburger menu -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+  <!-- FONT AWESOME ICONS-->
+  <script src="https://kit.fontawesome.com/fb7634f518.js" crossorigin="anonymous"></script>
+    <!-- Script for hamburger menu-->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    $('#icon').click(function(){
+      $('ul').toggleClass('show');
+    });
+  });
+</script>
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-<nav>
-  <label class="logo">Bentley-Ford </label>
-  <ul>
-    <li><a class="active" href="#">Home</a></li>
-    <li><a href="#">Publications</a></li>
-    <li><a href="#">Current Research</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-  <label id="icon">
-    <i class="fa fa-bars"></i>
-  </label>
-</nav>
+<header>
+  <nav>
+    <label class="logo">Bentley-Ford </label>
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#">Publications</a></li>
+      <li><a href="#">Current Research</a></li>
+      <li><a href="#">Connect</a></li>
+    </ul>
+    <label id="icon">
+      <i class="fa fa-bars"></i>
+    </label>
+  </nav>
+</header>
+<main>
+  <section id="hero-area">
+    <div class="content-wrapper">
+      <figure>
+        <img src="img/mbf-bw-d1.png" alt="Melissa Bentley-Ford">
+      </figure>
+      <div class="about-text"> 
+        <h1>Dr.Melissa <span>Bentley-Ford</span></h1>
+        <p>A postdoctoral researcher in Dr. Tamara Caspary’s lab at Emory University (Atlanta, GA, USA). She completed her PhD at the University of Alabama at Birmingham (Birmingham, AL, USA) in the lab of Dr. Brad Yoder. Prior to that, she obtained her B.S. in Biochemistry from Kennesaw State University (Kennesaw, GA, USA). Currently, her research interests lie in the area of understanding the role of primary cilia in regulating mammalian development. </p>
+      </div>
+    </div>
+  </section>
+  <section id="skill-area">
+    <div class="content-wrapper">
+        <div class="skill-items">
+          <article>
+            <p class="fontawesome-icon">
+              <i class="fas fa-angle-double-down"></i>
+            </p>
+            <h3>Molecular Biology</h3>
+            <p class="skill-item-description">Years Exp</p>
+          </article>
+          <article>
+            <p class="fontawesome-icon">
+              <i class="fas fa-angle-double-down"></i>
+            </p>
+            <h3>Embryology</h3>
+            <p class="features-item-description">Years Exp</p>
+          </article>
+          <article>
+            <p class="fontawesome-icon">
+              <i class="fas fa-angle-double-down"></i>
+            </p>
+            <h3>Microscopy</h3>
+            <p class="features-item-description">Years Exp</p>
+          </article>
+          <article>
+            <p class="fontawesome-icon">
+              <i class="fas fa-angle-double-down"></i>
+            </p>
+            <h3>Cilia Biology</h3>
+            <p class="features-item-description">Years Exp</p>
+          </article>
+          <article>
+            <p class="fontawesome-icon">
+              <i class="fas fa-angle-double-down"></i>
+            </p>
+            <h3>Mouse Genetics</h3>
+            <p class="features-item-description">Years Exp</p>
+          </article>
+          <article>
+            <p class="fontawesome-icon">
+              <i class="fas fa-angle-double-down"></i>
+            </p>
+            <h3>Developmental Biology</h3>
+            <p class="features-item-description">Years Exp</p>
+          </article>
+        </div><!--feature-item end-->
+    </div><!--COntent wrapper end-->
+  </section>
+  <section id="publication-section">
+    <div class="content-wrapper">
+      <div class="publication-list">
+        <article>
+          
+        </article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+      </div>
+    </div>
+  </section>
+  <section id="contact-section">
+    <div class="content-wrapper">
+
+    </div>
+  </section>
+</main>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
