@@ -27,37 +27,41 @@
   <script src="https://kit.fontawesome.com/fb7634f518.js" crossorigin="anonymous"></script>
     <!-- Script for hamburger menu-->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-  <script>
-  $(document).ready(function(){
-    $('#icon').click(function(){
-      $('ul').toggleClass('show');
-    });
-  });
-</script>
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-<header>
-  <nav>
-    <label class="logo">MBF</label>
-    <ul>
-      <li><a href="#">Publications</a></li>
-      <li><a href="#">Experience</a></li>
-      <li><a href="#">Connect</a></li>
+  <nav class="navbar">
+    <!-- Logo with text -->
+    <div class="navbar__logo">
+      <i class="fas fa-angle-double-right"></i>
+      <a href="./index.html">Melissa Bentley-Ford PhD</a>
+    </div>
+    <!-- Menu -->
+    <ul class="navbar__menu">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./portfolio/index.html">Publications</a></li>
+      <li><a href="./services/index.html">Experience</a></li>
+      <li><a href="#contact">Connect</a></li>
     </ul>
-    <label id="icon">
-      <i class="fa fa-bars"></i>
-    </label>
+    <!-- Icons -->
+    <ul class="navbar__icons">
+      <li><i class="fab fa-linkedin-in"></i></li>
+      <li><i class="fab fa-facebook-f"></i></li>
+    </ul>
+    <!-- Toggle button -->
+    <a href="#" class="navbar__toggleBtn">
+      <i class="fas fa-bars"></i>
+    </a>
   </nav>
-</header>
 <main>
   <section id="hero-area">
     <div class="content-wrapper">
-      <figure>
-        <img src="img/mbf-bw-d1.png" alt="Melissa Bentley-Ford">
-      </figure>
+
       <div class="about-text"> 
+        <figure>
+          <img src="img/mbf-bw-d1.png" alt="Melissa Bentley-Ford">
+        </figure>
         <h1><span class="dr">Dr.</span>Melissa Bentley-Ford</h1>
         <p>A postdoctoral researcher in Dr. Tamara Caspary’s lab at Emory University (Atlanta, GA, USA). She completed her PhD at the University of Alabama at Birmingham (Birmingham, AL, USA) in the lab of Dr. Brad Yoder. Prior to that, she obtained her B.S. in Biochemistry from Kennesaw State University (Kennesaw, GA, USA). Currently, her research interests lie in the area of understanding the role of primary cilia in regulating mammalian development. </p>
         <a href="https://orcid.org/0000-0002-9646-1420" class="button">Orcid</a>
@@ -95,20 +99,7 @@
             <h3>Cilia Biology</h3>
             <p class="features-item-description">Years Exp</p>
           </article>
-          <article>
-            <p class="fontawesome-icon">
-              <i class="fas fa-angle-double-down"></i>
-            </p>
-            <h3>Mouse Genetics</h3>
-            <p class="features-item-description">Years Exp</p>
-          </article>
-          <article>
-            <p class="fontawesome-icon">
-              <i class="fas fa-angle-double-down"></i>
-            </p>
-            <h3>Developmental Biology</h3>
-            <p class="features-item-description">Years Exp</p>
-          </article>
+
         </div><!--feature-item end-->
     </div><!--COntent wrapper end-->
   </section>

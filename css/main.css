@@ -115,7 +115,7 @@ width: 100%;
 }
 
 .button {
-  background:#ea83f8;
+  background:#B557BA;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -127,64 +127,81 @@ width: 100%;
   text-transform: uppercase;
 }
 /*******NAV STYLING:Mobile*******/
-nav{
+.navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height:100px;
-  width:100%;
-  background:#121212;
+  padding: 8px 12px;
+  background: #121212;
+  flex-direction: column;
+  padding: 8px 24px;
 }
-label.logo{
-  font-size: 32px;
-  font-weight: bold;
-  color:#d6d6d6;
-  margin-left: 20px;
+ a{
+   text-decoration: none;
+   color: #903d94;
+ }
+/* Logo with text */
+.navbar__logo {
+  font-size: 24px;
+  color: RGBA(168,213,203);
 }
 
-nav ul{
-  position:fixed;
-  margin-right: 20px;
-  width: 100%;
-  height: 100vh;
-  background:#121212;
-  top:80px;
-  left:-100%;
+.navbar__logo i {
+  color:RGBA(168,213,203);
+}
+
+/* Menu */
+.navbar__menu {
+  display: none;
+  flex-direction: column;
   text-align: center;
-  transition: all .5s;
+  width: 100%;
+  padding-left: 0;
+  list-style: none;
 }
 
-nav ul.show{
-  left:0;
-
+.navbar__menu li {
+  padding: 8px 12px;
 }
 
-nav li{
+.navbar__menu a {
+  /* Fill in an entire line so that user can click on any space */
   display: block;
-  margin:0 8px;
-  line-height: 80px;
 }
 
-nav a{
-  color:#d6d6d6;
-  font-size: 17px;
-  text-transform: uppercase;
-}
-
-a.active,a:hover{
-  border:none;
-  color:#58874b;
-}
-
-nav #icon{
-  display: block;
+.navbar__menu li:hover {
+  background-color: RGBA(168,213,203);
   color:#fff;
-  font-size: 30px;
-  line-height: 80px;
-  float: right;
-  margin-right:40px;
-  cursor: pointer;
+  border-radius: 4px;
 }
+
+.navbar__icons {
+  list-style: none;
+  color:RGB(168,213,203);
+  display: none;
+  justify-content: center;
+  padding-left: 0;
+}
+
+/* Icons */
+.navbar__icons li {
+  padding: 8px 12px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+/* Toggle button */
+.navbar__toggleBtn {
+  display: block;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: var(--accent-color);
+}
+
+  /* When toggle button is clicked - active state */
+  .navbar__menu.active,
+  .navbar__icons.active {
+    display: flex;
+  }
 
 
 /*HERO-AREA mobile styling*/
@@ -241,9 +258,12 @@ h3{
   flex-flow: column;
   width: 70%;
   margin: 30px 0 ;
-  border: #b38af5 solid 5px;
   border-radius: 5px;
   padding: 20px 15px;
+  background:url(../img/sprinkles-d1.png);
+  background-position: center;
+  background-size: cover;
+  
 }
 #skill-area h3{
   font-size: 23px;
@@ -297,7 +317,7 @@ text-align: center;
   margin: 20px 0;
 }
 h4{
-  color: #b38af5;
+  color: #903d94;
   margin-bottom:15px ;
 }
 .pub-list p{
@@ -361,7 +381,6 @@ footer .social-icons p i{
 
 footer .copyright{
   margin: 20px 0;
-  color:;
 
 }
 
@@ -460,42 +479,103 @@ footer .copyright{
   @media only screen and (min-width: 768px){
     /*Tablet styles here*/
 
-  nav{
+    /*NAV styles here*/
+    .navbar {
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 12px;
+      flex-flow: row nowrap;
+    }
+  
+    /* Logo with text */
+    .navbar__logo {
+      font-size: 24px;
+      color: RGBA(168,213,203);
+    }
+  
+    .navbar__logo i {
+      color:RGBA(168,213,203);
+    }
+  /* Menu */
+  .navbar__menu {
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-left: 0;
+    list-style: none;
+    flex-direction: row;
+    width: 30%;
   }
-  nav #icon{
-    display:none;
+
+  .navbar__menu li {
+    padding: 8px 12px;
+
   }
-  label.logo{
-   font-size:35px;
- }
-  nav ul{
+
+
+
+  .navbar__icons {
+    list-style: none;
+    color:RGB(168,213,203);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right:40px;
-    position: static;
-    width: auto;
-    height: auto;
+    padding-left: 0;
+    font-size: 1.5em;
+  }
 
+  /* Icons */
+  .navbar__icons li {
+    padding: 8px 12px;
   }
-  nav li{
-    display: inline-block;
-    margin:0 8px;
-  }
-  nav a{
-    border:1px solid transparent;
-    font-size: 18px;
-    padding:7px 10px;
-    border-radius: 3px;
-  }
-  a.active, a:hover{
-    border: 1px solid #fff;
-    transition: .5s;
 
+  /* Toggle button */
+  .navbar__toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: var(--accent-color);
   }
+   .content-wrapper{
+     margin:4.6875em 0;
+   }
+
+
+    p{
+      font-size: 2vmin;
+    }
+    /*HERO styles here*/
+    #hero-area .content-wrapper{
+      justify-content: space-around;
+      flex-flow: row nowrap;
+    }
+    #hero-area figure{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+    }
+
+    .about-text{
+      margin-top: 50px;
+      padding:20px;
+      width: 50%;
+    }
+    /*SKILLS styles here*/
+    #skill-area article {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column wrap;
+      width: 33.333%;
+      margin: 10px;
+    }
+    
+    #skill-area .skill-item-description {
+      width: 50%;
+    }
+    
+    
+    /*PUBS styles here*/
+
   }
 
   @media only screen and (min-width: 1200px){
