@@ -22,7 +22,7 @@
   <!--GOOGLE FONTS-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&family=Lexend+Tera:wght@100;500&display=swap" rel="stylesheet">
   <!-- FONT AWESOME ICONS-->
   <script src="https://kit.fontawesome.com/fb7634f518.js" crossorigin="anonymous"></script>
     <!-- Script for hamburger menu-->
@@ -31,29 +31,29 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <!-- Logo with text -->
-    <div class="navbar-logo">
-      <i class="fas fa-angle-double-right"></i>
-      <a href="./index.html">Melissa Bentley-Ford PhD</a>
-    </div>
-    <!-- Menu -->
-    <ul class="navbar-menu">
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./portfolio/index.html">Publications</a></li>
-      <li><a href="./services/index.html">Experience</a></li>
-      <li><a href="#contact">Connect</a></li>
-    </ul>
-    <!-- Icons -->
-    <ul class="navbar-icons">
-      <li><i class="fab fa-linkedin-in"></i></li>
-      <li><i class="fab fa-facebook-f"></i></li>
-    </ul>
-    <!-- Toggle button -->
-    <a href="#" class="navbar-togglebtn">
-      <i class="fas fa-bars"></i>
-    </a>
-  </nav>
+  <!-- Nav container -->
+<nav class="navbar">
+  <!-- Logo with text -->
+  <div class="navbar__logo">
+    <a href="./index.html">MBF</a>
+  </div>
+  <!-- Menu -->
+  <ul class="navbar__menu">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./portfolio/index.html">Publications</a></li>
+    <li><a href="#about">Experience</a></li>
+    <li><a href="#contact-section">Connect</a></li>
+  </ul>
+  <!-- Icons -->
+  <ul class="navbar__icons">
+    <li><a href="https://www.linkedin.com/in/melissa-r-bentley/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></i></a></li>
+  </ul>
+  <!-- Toggle button -->
+  <a href="#" class="navbar__toggleBtn">
+    <i class="fas fa-bars"></i>
+  </a>
+</nav>
 <main>
   <section id="hero-area">
     <div class="content-wrapper">
@@ -61,46 +61,11 @@
           <img src="img/mbf-bw-d1.png" alt="Melissa Bentley-Ford">
         </figure>
           <div class="about-text">
-          <h1><span class="dr">Dr.</span>Melissa Bentley-Ford</h1>
+          <h1>Melissa Bentley-Ford<span class="dr">PhD</span></h1>
           <p>A postdoctoral researcher in Dr. Tamara Caspary’s lab at Emory University (Atlanta, GA, USA). She completed her PhD at the University of Alabama at Birmingham (Birmingham, AL, USA) in the lab of Dr. Brad Yoder. Prior to that, she obtained her B.S. in Biochemistry from Kennesaw State University (Kennesaw, GA, USA). Currently, her research interests lie in the area of understanding the role of primary cilia in regulating mammalian development. </p>
-          <a href="https://orcid.org/0000-0002-9646-1420" class="button">Orcid</a>
+          <a href="https://orcid.org/0000-0002-9646-1420" class="button">CONNECT</a>
         </div>
       </div>
-  </section>
-  <section id="skill-area">
-    <div class="content-wrapper">
-        <div class="skill-items">
-          <article>
-            <p class="fontawesome-icon">
-              <i class="fas fa-angle-double-down"></i>
-            </p>
-            <h3>Molecular Biology</h3>
-            <p class="features-item-description">Years Exp</p>
-          </article>
-          <article>
-            <p class="fontawesome-icon">
-              <i class="fas fa-angle-double-down"></i>
-            </p>
-            <h3>Embryology</h3>
-            <p class="features-item-description">Years Exp</p>
-          </article>
-          <article>
-            <p class="fontawesome-icon">
-              <i class="fas fa-angle-double-down"></i>
-            </p>
-            <h3>Microscopy</h3>
-            <p class="features-item-description">Years Exp</p>
-          </article>
-          <article>
-            <p class="fontawesome-icon">
-              <i class="fas fa-angle-double-down"></i>
-            </p>
-            <h3>Cilia Biology</h3>
-            <p class="features-item-description">Years Exp</p>
-          </article>
-
-        </div><!--feature-item end-->
-    </div><!--COntent wrapper end-->
   </section>
   <section id="pub-section">
     <div class="content-wrapper">
@@ -143,6 +108,9 @@
             McMurry, B. D. Ackley, A. D. Chisholm and M. L. Hudson (2016).</p>
           <p class="pub-accent">Genetics 202(2): 639-660.</p>
         </article>
+        <article>
+          <a href="https://orcid.org/0000-0002-9646-1420" class="button">Orcid</a>
+        </article>
       </div>
     </div>
   </section>
@@ -161,10 +129,10 @@
       <div class="social">
         <div class="social-icons">
           <p>
-            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.linkedin.com/in/melissa-r-bentley/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
           </p>
           <p>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></i></a>
+            <a href="https://twitter.com/melissarbentley" target="_blank"><i class="fab fa-twitter"></i></i></a>
           </p>
         </div>
       </div>
@@ -172,7 +140,7 @@
   </div><!--Footer wrapper ends here-->
 
   <div class="copyright">
-    <p>Made with love and coffee by Kaybee Web Development</p>
+    <p>Made by Kelli B ✌️ ☕️</p>
   </div>
   
 </footer>
