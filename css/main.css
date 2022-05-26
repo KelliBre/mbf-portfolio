@@ -135,7 +135,7 @@ width: 90%;
   font-size: 16px;
   margin: 20px 10px;
   cursor: pointer;
-  border-radius: 15px;
+
   text-transform: uppercase;
   filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
@@ -303,6 +303,10 @@ h4{
 .pub-accent{
   color:#a3a3a3;
   margin-top: 10px;
+}
+
+.pub-button{
+  align-self: center;
 }
  
 
